@@ -1,3 +1,86 @@
+#page-wrap { width: 80%; margin: 60px auto; }
+#page-wrap > div { margin: 0 0 50px 0; min-width: 700px; width: 100%; }
+
+.group:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.group { display: inline-block; }
+
+#nicolas-gallagher {
+            position: relative; 
+            background: #eee; 
+            z-index: 1; 
+            width: 100%; 
+        }
+        #nicolas-gallagher .col { 
+            position: relative; 
+            width: 27%; 
+            padding: 3%; 
+            float: left; 
+        }
+        #nicolas-gallagher .col:nth-child(1) { left: -33.%; }
+        #nicolas-gallagher .col:nth-child(2) { left: 0%; }
+        #nicolas-gallagher .col:nth-child(3) { left: 0; }
+        #nicolas-gallagher:before, #nicolas-gallagher:after {
+           content: "";
+           position: absolute;
+           z-index: -1;
+           top: 0;
+           left: 33.4%;
+           width: 33.4%;
+           height: 100%;
+           background: #ccc;
+        }
+        #nicolas-gallagher:after {
+           left: 66.667%;
+           background: #eee;
+        }
+
+
+
+
+.group2:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.group2 { display: inline-block; }
+
+#nicolas-gallagher2 {
+            position: relative; 
+            background: #eee; 
+            z-index: 1; 
+            width:100%; 
+        }
+        #nicolas-gallagher2 .col2 { 
+            position: relative; 
+            width: 50%; 
+            padding: 2%; 
+            float: left; 
+        }
+        #nicolas-gallagher2 .col2:nth-child(1) { left: 0%; }
+        #nicolas-gallagher2 .col2:nth-child(2) { left: 0%; }
+        #nicolas-gallagher2:before, #nicolas-gallagher2:after {
+           content: "";
+           position: absolute;
+           z-index: -1;
+           top: 0;
+           left: 50%;
+           width: 50%;
+           height: 100%;
+           background: #ccc;
+        }
+
+
+
 /* Three columns side by side */
 .column3 {
     float: left;
@@ -27,6 +110,7 @@
 
 .title {
     color: teal;
+    text-align: center;
 }
 
 .column2 {
@@ -57,6 +141,9 @@ h6 {
   font-family: 'Raleway';
 }
 
+h4{
+  text-align:center;
+}
 p {
   line-height: 1.75;
 }
@@ -234,6 +321,7 @@ img {
 
 @media (min-width: 992px) {
   .product-item .product-item-title {
+    text-align: center;
     position: relative;
     z-index: 1;
     margin-bottom: -3rem;
